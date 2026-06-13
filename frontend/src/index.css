@@ -252,7 +252,6 @@ section,
 
 /* The header banner */
 .header-banner {
-    /* background-image: url("../public/assets/images/hotel.webp"); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -426,7 +425,7 @@ section,
     margin: 5px auto 30px auto;
 }
 
-.phegon-color {
+.surfboard-color {
     color: #FF007F;
     color: #FF7F50;
 }

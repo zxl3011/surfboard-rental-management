@@ -55,8 +55,8 @@ const EditRentalPage = () => {
                 <div className="rental-details">
                     <h3>Rental Details</h3>
                     <p>Confirmation Code: {rentalDetails.rentalConfirmationCode}</p>
-                    <p>Check-in Date: {rentalDetails.checkInDate}</p>
-                    <p>Check-out Date: {rentalDetails.checkOutDate}</p>
+                    <p>Check-in Date: {rentalDetails.startDate}</p>
+                    <p>Check-out Date: {rentalDetails.endDate}</p>
                     <p>Num Of Adults: {rentalDetails.numOfAdults}</p>
                     <p>Num Of Children: {rentalDetails.numOfChildren}</p>
                     <p>Guest Email: {rentalDetails.guestEmail}</p>
@@ -74,11 +74,11 @@ const EditRentalPage = () => {
                     <br />
                     <hr />
                     <br />
-                    <h3>Room Details</h3>
+                    <h3>Equipment Details</h3>
                     <div>
-                        <p> Room Type: {rentalDetails.equipment.category}</p>
-                        <p> Room Price: ${rentalDetails.equipment.dailyRate}</p>
-                        <p> Room Description: {rentalDetails.equipment.description}</p>
+                        <p> Equipment Type: {rentalDetails.equipment.category}</p>
+                        <p> Equipment Price: ${rentalDetails.equipment.dailyRate}</p>
+                        <p> Equipment Description: {rentalDetails.equipment.description}</p>
                         <img src={rentalDetails.equipment.imageUrl} alt="" sizes="" srcSet="" />
                     </div>
                     <button

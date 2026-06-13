@@ -138,11 +138,11 @@ const ProfilePage = () => {
                                     <div className="grid grid-cols-2 gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100">
                                         <div>
                                             <p className="text-[10px] text-slate-400 uppercase font-bold">Check-in</p>
-                                            <p className="font-bold text-slate-800">{rental.checkInDate}</p>
+                                            <p className="font-bold text-slate-800">{rental.startDate}</p>
                                         </div>
                                         <div>
                                             <p className="text-[10px] text-slate-400 uppercase font-bold">Check-out</p>
-                                            <p className="font-bold text-slate-800">{rental.checkOutDate}</p>
+                                            <p className="font-bold text-slate-800">{rental.endDate}</p>
                                         </div>
                                     </div>
                                 </div>

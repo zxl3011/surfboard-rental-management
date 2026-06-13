@@ -69,8 +69,8 @@ const ManageRentalsPage = () => {
                 {currentRentals.map((rental) => (
                     <div key={rental.id} className="rental-result-item">
                         <p><strong>Rental Code:</strong> {rental.rentalConfirmationCode}</p>
-                        <p><strong>Check In Date:</strong> {rental.checkInDate}</p>
-                        <p><strong>Check out Date:</strong> {rental.checkOutDate}</p>
+                        <p><strong>Start Date:</strong> {rental.startDate}</p>
+                        <p><strong>End Date:</strong> {rental.endDate}</p>
                         <button
                             className="edit-equipment-button"
                             onClick={() => navigate(`/admin/edit-rental/${rental.rentalConfirmationCode}`)}

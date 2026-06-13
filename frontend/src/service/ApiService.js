@@ -125,16 +125,16 @@ export default class ApiService {
 
 
     /* This gets all available by dates equipments from the database with a given date and an equipment type */
-    // static async getAvailableEquipmentByDateAndType(checkInDate, checkOutDate, category) {
+    // static async getAvailableEquipmentByDateAndType(startDate, endDate, category) {
     //     const result = await axios.get(
-    //         `${this.BASE_URL}/equipments/available-equipments-by-date-and-type?checkInDate=${checkInDate}&checkOutDate=${checkOutDate}&category=${category}`
+    //         `${this.BASE_URL}/equipments/available-equipments-by-date-and-type?startDate=${startDate}&endDate=${endDate}&category=${category}`
     //     )
     //     return result.data
     // }
 
-    static async getAvailableEquipmentByDateAndType(checkInDate, checkOutDate, category){
+    static async getAvailableEquipmentByDateAndType(startDate, endDate, category){
         const result = await withRetry(() =>
-            api.get(`/equipments/available-equipments-by-date-and-type?checkInDate=${checkInDate}&checkOutDate=${checkOutDate}&category=${category}`),
+            api.get(`/equipments/available-equipments-by-date-and-type?startDate=${startDate}&endDate=${endDate}&category=${category}`),
             {retries: 2, delays: [1500, 3000]}
         );
         return result.data;

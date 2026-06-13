@@ -8,10 +8,10 @@
 		<version>3.3.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.phegondev</groupId>
+	<groupId>com.lucyzhang</groupId>
 	<artifactId>SurfboardRental</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PhegonHotel</name>
+	<name>SurfboardRental</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>
